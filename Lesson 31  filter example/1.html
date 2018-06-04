@@ -1,0 +1,29 @@
+<html>
+<meta charset='utf-8'>
+<head>
+	<link rel="stylesheet" href="vendor/css/bootstrap.css" />
+	<link rel="stylesheet" href="vendor/css/angular-material.min.css">
+	<!-- <link rel="stylesheet" href="vendor/fontawesome.min.css" /> -->
+	<style type="text/css">
+		
+	</style>
+</head>
+<body ng-app="myApp">
+	<div ng-controller = "MyController">
+		<h3>Danh sách truyện</h3>
+		<input type="text" placeholder="Search..."/ ng-model="comic_name">
+		<div class="card" ng-repeat="(key,value) in comic | filter:comic_name" style="width: 18rem;">
+		  <div class="card-header">{{ value.name | uppercase}}</div>
+		</div>
+	</div>
+	
+	<script src="vendor/js/bootstrap.js"></script>
+	<script src="vendor/js/fontawesome-all.js"></script>
+	<script src="vendor/js/angular-1.5.min.js"></script>
+	<script type="text/javascript" src="vendor/js/angular-animate.min.js"></script>
+  	<script type="text/javascript" src="vendor/js/angular-aria.min.js"></script>
+ 	<script type="text/javascript" src="vendor/js/angular-messages.min.js"></script>
+ 	<script type="text/javascript" src="vendor/js/angular-material.min.js"></script> 
+	<script src="vendor/js/1.js"></script>
+</body>
+</html>

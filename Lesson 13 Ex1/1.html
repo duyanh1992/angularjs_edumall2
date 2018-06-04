@@ -1,0 +1,29 @@
+<html>
+<meta charset='utf-8'>
+<head>
+	<link rel="stylesheet" href="vendor/css/bootstrap.css" />
+	<!-- <link rel="stylesheet" href="vendor/fontawesome.min.css" /> -->
+	<style type="text/css">
+		
+	</style>
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+	<div class="container">
+		<div class="row">
+			<!-- <i class="fas fa-pencil-alt"></i> -->
+			<div ng-show="show">{{text}} 
+				<button class="btn btn-info" ng-click="changeShow()"><i class="fas fa-pencil-alt"></i></button>
+			</div>
+			<div ng-show="!show">
+				<input type="text" name="text" ng-model="text"/>
+				<button class="btn btn-info" ng-click="changeShow()"><i class="fas fa-check"></i></button>
+			</div>
+		</div>
+	</div>	
+	
+	<script src="vendor/js/bootstrap.js"></script>
+	<script src="vendor/js/fontawesome-all.js"></script>
+	<script src="vendor/js/angular-1.5.min.js"></script>
+	<script src="vendor/js/1.js"></script>
+</body>
+</html>

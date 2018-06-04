@@ -1,0 +1,23 @@
+<html>
+	<meta charset='utf-8'>
+<head>
+	<link rel="stylesheet" href="vendor/bootstrap.css" />
+	<style type="text/css">
+		.do{
+			background-color:red;
+		}
+		
+		.xanh{
+			background-color:blue;
+		}
+	</style>
+</head>
+<body ng-app class="{{bg}}">
+	<center>
+		<input type="radio" name="bg" value="xanh" ng-model="bg"/>Xanh
+		<input type="radio" name="bg" value="do" ng-model="bg"/>Đỏ
+	</center>
+	<script src="vendor/bootstrap.js"></script>
+	<script src="vendor/angular-1.5.min.js"></script>
+</body>
+</html>

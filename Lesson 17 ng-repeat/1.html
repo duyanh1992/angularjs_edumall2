@@ -1,0 +1,28 @@
+<html>
+<meta charset='utf-8'>
+<head>
+	<link rel="stylesheet" href="vendor/css/bootstrap.css" />
+	<!-- <link rel="stylesheet" href="vendor/fontawesome.min.css" /> -->
+	<style type="text/css">
+		
+	</style>
+</head>
+<body ng-app="myApp" ng-controller="MyController">
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li ng-repeat = "(key,value) in data">
+					<b>Key : </b><i>{{key}}</i>
+					<b>Tên : </b><i>{{value.name}}</i>
+					<b>Năm sinh : </b><i>{{value.year}}</i>
+				</li>
+			</ul>
+		</div>
+	</div>	
+	
+	<script src="vendor/js/bootstrap.js"></script>
+	<script src="vendor/js/fontawesome-all.js"></script>
+	<script src="vendor/js/angular-1.5.min.js"></script>
+	<script src="vendor/js/1.js"></script>
+</body>
+</html>
